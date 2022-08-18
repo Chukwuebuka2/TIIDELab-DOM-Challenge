@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TIIDELab Fellows</h1>
+    <div>
+        <form id="add-user">
+            <!-- Name -->
+            <strong>Name: </strong><input type="text" name="" id="name" placeholder="Enter full name" size="30"><br>
+            
+            <!-- Email -->
+            <strong>Email: </strong><input type="text" name="" id="email" placeholder="Enter your email" size="30"><br>
+    
+            <!-- Selecting your track -->
+            <strong>Please select your track:</strong><br> 
+            <!-- Frontend -->
+            <input type="radio" name="track" id="frontend" value="Frontend"> 
+            <label for="frontend">Frontend</label>
+            <!-- Backend -->
+            <input type="radio" name="track" id="backend" value="Backend"> 
+            <label for="backend">Backend</label><br>
+    
+            <!-- is TeamLead -->
+            <strong>Are you a team lead: </strong><br>
+            <!-- Yes -->
+            <input type="radio" name="teamLead" id="true" value="True">
+            <label for="true">Yes</label>
+            <!-- No -->
+            <input type="radio" name="teamLead" id="false" value="False">
+            <label for="false">No</label><br>
+    
+            <!-- Suspended  -->
+            <strong>Are you suspended: </strong><br>
+            <!-- Yes -->
+            <input type="radio" name="suspended" id="true" value="True">
+            <label for="true">Yes</label>
+            <!-- No -->
+            <input type="radio" name="suspended" id="false" value="False">
+            <label for="false">No</label><br>
+    
+            <!-- Exppelled -->
+            <strong>Have you been expelled: </strong><br>
+            <!-- Yes -->
+            <input type="radio" name="expelled" id="true" value="True">
+            <label for="true">Yes</label>
+            <!-- No -->
+            <input type="radio" name="expelled" id="false" value="False" checked>
+            <label for="false">No</label><br>
+    
+            <input type="submit" value="Add New User">
+        </form>
+    </div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Track</th>
+                <th>isTeamLead</th>
+                <th>isSuspended</th>
+                <th>isExpelled</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Add new users here using JS -->
+        </tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
